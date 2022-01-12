@@ -24,7 +24,7 @@ function preload(){
 }
 
 function setup() {
-  var canvas = createCanvas(850, 400);
+  var canvas = createCanvas(850, 470);
   engine = Engine.create();
   world = engine.world;
 
@@ -54,7 +54,7 @@ function draw() {
   
   for(var i=0; i< points.length; i++){
     drawPoints(i);
-     // write code to move points 
+     // write code to move the points 
           
     }
 
@@ -67,10 +67,10 @@ function draw() {
 
 function drawPoints(i) {
   push();
-  stroke("white")
+  stroke("#fff9c4");
   strokeWeight(3);
   ellipseMode(RADIUS);
-  fill("blue");
+  fill("#4527a0");
   ellipse(points[i].x, points[i].y, 10, 10);
   pop();
 }
